@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-slate-950 text-slate-100 antialiased selection:bg-fifa-gold selection:text-fifa-blue transition-colors duration-200;
+  }
+}
+
+/* Custom Accessibility Text Scaling */
+.text-scale-sm {
+  font-size: 0.875rem; /* 14px */
+}
+.text-scale-md {
+  font-size: 1rem; /* 16px */
+}
+.text-scale-lg {
+  font-size: 1.125rem; /* 18px */
+}
+.text-scale-xl {
+  font-size: 1.25rem; /* 20px */
+}
+
+/* Adjust specific typography selectors when text-scale-lg is active */
+.text-scale-lg p, 
+.text-scale-lg span, 
+.text-scale-lg li, 
+.text-scale-lg button, 
+.text-scale-lg input, 
+.text-scale-lg textarea,
+.text-scale-lg select {
+  font-size: 1.125rem !important;
+  line-height: 1.625rem !important;
+}
+.text-scale-lg h1 {
+  font-size: 2.25rem !important;
+}
+.text-scale-lg h2 {
+  font-size: 1.75rem !important;
+}
+.text-scale-lg h3 {
+  font-size: 1.5rem !important;
+}
+
+/* Adjust specific typography selectors when text-scale-xl is active */
+.text-scale-xl p, 
+.text-scale-xl span, 
+.text-scale-xl li, 
+.text-scale-xl button, 
+.text-scale-xl input, 
+.text-scale-xl textarea,
+.text-scale-xl select {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+}
+.text-scale-xl h1 {
+  font-size: 2.5rem !important;
+}
+.text-scale-xl h2 {
+  font-size: 2rem !important;
+}
+.text-scale-xl h3 {
+  font-size: 1.75rem !important;
+}
+
+/* Custom Theme-High-Contrast Overrides */
+.theme-high-contrast {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+.theme-high-contrast * {
+  border-color: #FFFFFF !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.theme-high-contrast button,
+.theme-high-contrast a,
+.theme-high-contrast input,
+.theme-high-contrast textarea,
+.theme-high-contrast select {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  border: 2px solid #FFFFFF !important;
+}
+
+.theme-high-contrast button:focus,
+.theme-high-contrast a:focus,
+.theme-high-contrast input:focus,
+.theme-high-contrast textarea:focus,
+.theme-high-contrast select:focus {
+  outline: 3px solid #FFB800 !important;
+  outline-offset: 2px !important;
+}
+
+.theme-high-contrast .bg-fifa-green,
+.theme-high-contrast .bg-fifa-green-light,
+.theme-high-contrast .bg-fifa-green-dark,
+.theme-high-contrast .bg-fifa-blue,
+.theme-high-contrast .bg-fifa-blue-light,
+.theme-high-contrast .bg-fifa-blue-dark,
+.theme-high-contrast .bg-slate-800,
+.theme-high-contrast .bg-slate-900,
+.theme-high-contrast .bg-slate-950,
+.theme-high-contrast .bg-gray-800,
+.theme-high-contrast .bg-gray-900 {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+.theme-high-contrast .text-slate-400,
+.theme-high-contrast .text-gray-400,
+.theme-high-contrast .text-slate-300,
+.theme-high-contrast .text-slate-200,
+.theme-high-contrast .text-gray-300 {
+  color: #FFFFFF !important;
+}
+
+.theme-high-contrast .text-fifa-gold,
+.theme-high-contrast .text-yellow-400,
+.theme-high-contrast .text-amber-400 {
+  color: #FFB800 !important;
+  font-weight: bold;
+}
+
+/* High Contrast Emergency Mode Red */
+.theme-high-contrast.emergency-mode,
+.theme-high-contrast .emergency-mode-panel {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+  border: 4px solid #D1193E !important;
+}
+
+.theme-high-contrast .emergency-text {
+  color: #FF0000 !important;
+  font-weight: 900 !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
