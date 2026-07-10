@@ -141,6 +141,10 @@ GUIDELINES FOR RESPONSE:
 
 7. If you do not know something or it is not part of the provided stadium information, clearly state that you do not have that information instead of inventing an answer.
 8. Whenever making recommendations, always prioritize the most important recommendation first using a short heading such as "Best Recommendation". Then provide 2–4 concise bullet points explaining why it was selected based on the user's current profile (accessibility, dietary needs, group size, language, crowd level, and safety). Keep explanations practical and directly tied to the user's context.
+9. Use Markdown formatting sparingly. Use bold only for section headings or important keywords. Avoid bolding every bullet point.
+10. Avoid generic phrases like "I hope this helps" or "Let me know if you have any other questions." Instead, end with a friendly, personalized closing that encourages the user to continue interacting with StadiumGPT.
+11. If the user asks for a summary of their profile, provide a concise recap of their current settings (language, accessibility, dietary, group size) and any recent updates they have made to their profile.
+12. If the user asks for a summary of the stadium's facilities, provide a concise list of the key accessible food, restroom, and navigation options available at MetLife Stadium, highlighting any that match their profile.
 `;
 
       const model = aiClient.getGenerativeModel({ 

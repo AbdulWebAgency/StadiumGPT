@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import type { UserMemory, Message } from '../../types';
 import { askStadiumAI } from '../../services/gemini';
 import { Send, Sparkles, BrainCircuit, RotateCcw, HelpCircle } from 'lucide-react';
+import ReactMarkdown from "react-markdown";
 
 interface CompanionChatProps {
   memory: UserMemory;
@@ -337,7 +338,30 @@ if (
                   : 'bg-slate-800 border border-slate-700 text-slate-100 rounded-tl-none'
               }`}
             >
-              {msg.content}
+             <ReactMarkdown
+  components={{
+    p: ({ children }) => (
+      <p className="mb-3 last:mb-0 leading-relaxed">{children}</p>
+    ),
+    ul: ({ children }) => (
+      <ul className="list-disc pl-5 mb-3 space-y-1">{children}</ul>
+    ),
+    ol: ({ children }) => (
+      <ol className="list-decimal pl-5 mb-3 space-y-1">{children}</ol>
+    ),
+    strong: ({ children }) => (
+      <strong className="font-bold text-white">{children}</strong>
+    ),
+    h1: ({ children }) => (
+      <h1 className="text-lg font-bold mb-2">{children}</h1>
+    ),
+    h2: ({ children }) => (
+      <h2 className="text-base font-bold mb-2">{children}</h2>
+    ),
+  }}
+>
+  {msg.content}
+</ReactMarkdown>
             </div>
 
             {/* AI Reasoning Section */}
