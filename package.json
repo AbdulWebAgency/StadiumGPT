@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "tsc -b && vite build",
+  "lint": "oxlint",
+  "test": "vitest run",
+  "preview": "vite preview"
+},
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "firebase": "^12.15.0",
@@ -27,6 +28,7 @@
     "postcss": "^8.5.16",
     "tailwindcss": "^3.4.19",
     "typescript": "~6.0.2",
-    "vite": "^8.1.1"
+    "vite": "^8.1.1",
+    "vitest": "^4.1.10"
   }
 }

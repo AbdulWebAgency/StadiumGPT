@@ -68,6 +68,7 @@ Instead of providing generic answers, StadiumGPT considers each fan's profile—
 - 🌍 Multi-language Support
 - 🔐 Firebase Authentication
 - 📱 Mobile Responsive Design
+- ✅ Automated Unit Testing with Vitest
 
 ---
 
@@ -142,7 +143,23 @@ Instead of simply answering questions, StadiumGPT explains **why** each recommen
 - Vercel
 
 ---
+## Running Tests
 
+This project uses Vitest for automated unit testing.
+
+Run the test suite:
+
+```bash
+npm test
+```
+
+Current automated unit tests verify:
+
+- Navigation accessibility mapping
+- Lost & Found matching engine
+- Core business logic utilities
+
+---
 # 🧩 Project Architecture
 
 ```
