@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import type { LostFoundReport } from '../../types';
 import { createLostFoundReport, getLostFoundReports } from '../../services/firebase';
 import { PackageOpen, FileText, CheckCircle2, Sparkles, Inbox } from 'lucide-react';
+import { findMatchingReport } from "../../utils/matching";
 
 interface LostFoundProps {
   userId: string;
@@ -75,28 +76,16 @@ export const LostFound: React.FC<LostFoundProps> = ({ userId }) => {
   };
 
   // Keyword intersection matching algorithm
-  const checkPotentialMatch = (type: string, colorQuery: string): LostFoundReport | null => {
-    const queryType = type.toLowerCase();
-    const queryColor = colorQuery.toLowerCase();
-
-    // Search inside 'found' reports
-    const foundReports = reports.filter(r => r.type === 'found' && r.status === 'active');
-    
-    for (const report of foundReports) {
-      const itemLower = report.item.toLowerCase();
-      const colorLower = report.color.toLowerCase();
-      const descLower = report.description.toLowerCase();
-
-      // Simple keyword matches
-      const matchesItem = itemLower.includes(queryType) || descLower.includes(queryType);
-      const matchesColor = colorLower.includes(queryColor) || descLower.includes(queryColor);
-
-      if (matchesItem && matchesColor) {
-        return report;
-      }
-    }
-    return null;
-  };
+  const checkPotentialMatch = (
+  type: string,
+  colorQuery: string
+): LostFoundReport | null => {
+  return findMatchingReport(
+    reports,
+    type.toLowerCase(),
+    colorQuery.toLowerCase()
+  );
+};
 
   const filteredListings = reports.filter(r => r.type === activeTab);
 

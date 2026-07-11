@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { UserMemory } from '../../types';
 import { Info, MapPin } from 'lucide-react';
+import { getNavigationStyle } from "../../utils/navigation";
 
 interface StadiumMapProps {
   memory: UserMemory;
@@ -12,14 +13,8 @@ export const StadiumMap: React.FC<StadiumMapProps> = ({ memory }) => {
 
   // Sync navigation style from user memory accessibility preference
   useEffect(() => {
-    if (memory.accessibility === 'wheelchair' || memory.accessibility === 'stroller') {
-      setActivePathStyle('stair-free');
-    } else if (memory.accessibility === 'sensory') {
-      setActivePathStyle('low-crowd');
-    } else {
-      setActivePathStyle('standard');
-    }
-  }, [memory.accessibility]);
+  setActivePathStyle(getNavigationStyle(memory.accessibility));
+}, [memory.accessibility]);
 
   // Description builder for routes based on preference
   const getRouteDescription = () => {

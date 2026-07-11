@@ -1,4 +1,6 @@
 import type { UserMemory, LostFoundReport } from '../types';
+import { getNavigationStyle } from './navigation';
+import { findMatchingReport } from "./matching";
 
 export interface TestCase {
   name: string;
@@ -85,24 +87,11 @@ export const runTests = (): TestCase[] => {
         ];
 
         // Matching function
-        const matchItem = (type: string, color: string): boolean => {
-          const qType = type.toLowerCase();
-          const qColor = color.toLowerCase();
-          
-          return dummyFoundReports.some(r => {
-            const itemLower = r.item.toLowerCase();
-            const colorLower = r.color.toLowerCase();
-            const descLower = r.description.toLowerCase();
+     const hasMatch =
+  findMatchingReport(dummyFoundReports, "backpack", "blue") !== null;
 
-            const matchesItem = itemLower.includes(qType) || descLower.includes(qType);
-            const matchesColor = colorLower.includes(qColor) || descLower.includes(qColor);
-            return matchesItem && matchesColor;
-          });
-        };
-
-        const hasMatch = matchItem('backpack', 'blue');
-        const noMatch = matchItem('phone', 'black');
-
+const noMatch =
+  findMatchingReport(dummyFoundReports, "phone", "black") !== null;
         const success = hasMatch && !noMatch;
         return {
           success,
@@ -116,16 +105,9 @@ export const runTests = (): TestCase[] => {
       name: 'Accessibility SVG Route Selection Test',
       category: 'Navigation',
       run: () => {
-        const mapAccessibilityToPath = (acc: string): string => {
-          if (acc === 'wheelchair' || acc === 'stroller') return 'stair-free';
-          if (acc === 'sensory') return 'low-crowd';
-          return 'standard';
-        };
-
-        const path1 = mapAccessibilityToPath('wheelchair');
-        const path2 = mapAccessibilityToPath('sensory');
-        const path3 = mapAccessibilityToPath('none');
-
+       const path1 = getNavigationStyle('wheelchair');
+const path2 = getNavigationStyle('sensory');
+const path3 = getNavigationStyle('none');
         const success = path1 === 'stair-free' && path2 === 'low-crowd' && path3 === 'standard';
         return {
           success,
