@@ -1,4 +1,18 @@
+<p align="center">
 <img width="140" height="35" alt="Image" src="https://github.com/user-attachments/assets/db19a36d-051b-4944-bd41-606bfeb10ff7" />
+</p>
+
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
+
+![Firebase](https://img.shields.io/badge/Firebase-Cloud-FFCA28?logo=firebase)
+
+![Gemini](https://img.shields.io/badge/Google-Gemini_2.5_Flash-4285F4?logo=google)
+
+![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel)
+
+![License](https://img.shields.io/badge/License-Hackathon-success)
 
 ### AI-Powered Stadium Companion for the FIFA World Cup 2026
 
