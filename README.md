@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="public/hero.png" width="900"/>
+</p>
 # 🏟️ StadiumGPT
 
 ### AI-Powered Stadium Companion for the FIFA World Cup 2026
@@ -196,10 +198,9 @@ npm run dev
 <img width="1278" height="617" alt="Image" src="https://github.com/user-attachments/assets/dec5484f-3578-48d0-914e-cebe6627ef02" />
 <img width="1268" height="629" alt="Image" src="https://github.com/user-attachments/assets/e9b4fe2f-d91b-4b9c-962c-d2d4d4090c49" />
 <img width="1273" height="636" alt="Image" src="https://github.com/user-attachments/assets/d2cf18d1-b081-410b-a33b-f230af45485b" />
-- Recommendations
-- Emergency SOS
-- Lost & Found
-- Context Panel
+<img width="1279" height="635" alt="Image" src="https://github.com/user-attachments/assets/47788664-f994-4819-b311-18ee1a330600" />
+<img width="1275" height="619" alt="Image" src="https://github.com/user-attachments/assets/8f14d5b5-cfda-47d2-83d9-e53dbc5077fd" />
+<img width="1280" height="622" alt="Image" src="https://github.com/user-attachments/assets/1167fea5-ae31-4d6b-b2d7-def14b3ee54b" />
 
 ---
 
