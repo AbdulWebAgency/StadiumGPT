@@ -1,7 +1,5 @@
 <img width="140" height="35" alt="Image" src="https://github.com/user-attachments/assets/db19a36d-051b-4944-bd41-606bfeb10ff7" />
 
-# 🏟️ StadiumGPT
-
 ### AI-Powered Stadium Companion for the FIFA World Cup 2026
 
 StadiumGPT is an AI-powered stadium companion designed to enhance the fan experience during the FIFA World Cup 2026. It provides personalized navigation, accessibility-first recommendations, emergency assistance, facility discovery, and intelligent conversations using Google's Gemini 2.5 Flash AI.
