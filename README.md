@@ -26,7 +26,34 @@ Built as a solo project for Google's Prompt War.
 🔗 https://github.com/AbdulWebAgency/StadiumGPT
 
 ---
+# 🎯 Hackathon Submission Details
 
+# Chosen Vertical
+Sports Technology / AI for Fan Experience:
+StadiumGPT focuses on enhancing the FIFA World Cup 2026 match-day experience by using Generative AI to provide personalized navigation, accessibility support, emergency guidance, and intelligent stadium assistance.
+
+---
+# Approach & Logic
+The project combines a React frontend, Firebase authentication, persistent user memory, and Google's Gemini 2.5 Flash API to create a personalized stadium companion.
+
+Instead of providing generic answers, StadiumGPT considers each fan's profile—including accessibility requirements, dietary preferences, language, group size, and navigation style—to generate recommendations tailored to their needs. Every recommendation is accompanied by a Personalized Reasoning section so users understand why it was suggested.
+
+---
+# How the Solution Works
+1. Users complete a short onboarding process.
+2. Preferences are stored using Firebase and local memory.
+3. User queries are sent to Gemini 2.5 Flash along with the current stadium context.
+4. The AI generates personalized recommendations for navigation, food, facilities, emergency support, and stadium services.
+5. Responses are presented with clear reasoning and accessibility-focused guidance.
+
+---
+# Assumptions Made
+1. Stadium layouts, gates, facilities, and crowd density are simulated for demonstration purposes.
+2. Real-time crowd analytics and GPS navigation are represented using mock data.
+3. Emergency guidance follows predefined prototype workflows rather than live emergency services.
+4. The application demonstrates the AI workflow and user experience intended for deployment at large sporting events.
+
+---
 # ✨ Features
 
 - 🤖 AI Stadium Companion powered by Gemini 2.5 Flash
