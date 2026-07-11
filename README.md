@@ -160,6 +160,14 @@ Current automated unit tests verify:
 - Core business logic utilities
 
 ---
+## Verification
+
+StadiumGPT includes:
+
+- Automated unit tests powered by Vitest.
+- An in-app Verification Console for validating navigation logic, memory generation, and Lost & Found matching during development.
+
+---
 # 🧩 Project Architecture
 
 ```
