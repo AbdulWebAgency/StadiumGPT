@@ -198,7 +198,7 @@ npm run dev
 Suggested screenshots:
 
 <img width="1278" height="617" alt="Image" src="https://github.com/user-attachments/assets/dec5484f-3578-48d0-914e-cebe6627ef02" />
-- AI Companion
+<img width="1268" height="629" alt="Image" src="https://github.com/user-attachments/assets/e9b4fe2f-d91b-4b9c-962c-d2d4d4090c49" />
 - Stadium Map
 - Recommendations
 - Emergency SOS
