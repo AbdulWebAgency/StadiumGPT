@@ -1,4 +1,5 @@
 <img width="140" height="35" alt="Image" src="https://github.com/user-attachments/assets/db19a36d-051b-4944-bd41-606bfeb10ff7" />
+
 # 🏟️ StadiumGPT
 
 ### AI-Powered Stadium Companion for the FIFA World Cup 2026
