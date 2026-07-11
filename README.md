@@ -193,13 +193,9 @@ npm run dev
 
 # 📸 Screenshots
 
-> Add screenshots here before final submission.
-
-Suggested screenshots:
-
 <img width="1278" height="617" alt="Image" src="https://github.com/user-attachments/assets/dec5484f-3578-48d0-914e-cebe6627ef02" />
 <img width="1268" height="629" alt="Image" src="https://github.com/user-attachments/assets/e9b4fe2f-d91b-4b9c-962c-d2d4d4090c49" />
-- Stadium Map
+<img width="1273" height="636" alt="Image" src="https://github.com/user-attachments/assets/d2cf18d1-b081-410b-a33b-f230af45485b" />
 - Recommendations
 - Emergency SOS
 - Lost & Found
