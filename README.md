@@ -3,8 +3,10 @@
 </p>
 
 <p align="center">
+   
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript) ![Firebase](https://img.shields.io/badge/Firebase-Cloud-FFCA28?logo=firebase) ![Gemini](https://img.shields.io/badge/Google-Gemini_2.5_Flash-4285F4?logo=google) ![Vercel](https://img.shields.io/badge/Deploy-Vercel-000000?logo=vercel) 
 ![License](https://img.shields.io/badge/License-Hackathon-success)
+   
 </p>
 
 
